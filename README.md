@@ -91,7 +91,8 @@ np.random.shuffle()
 
 </br>
 
-### DenseNet
+## DenseNet
+
 ![kakaotalk_20181009_234246286](https://user-images.githubusercontent.com/42205410/46678876-983db200-cc20-11e8-9ed7-f14dbb98ee1f.png)
 
  >이전 레이어에서 다음 레이어를 이어주는 추가적인 Connection을 만들어 주어 레이어간의 의미있는 논리 전개 가능. 
@@ -102,9 +103,7 @@ np.random.shuffle()
 ![6](https://user-images.githubusercontent.com/42205410/46680000-156a2680-cc23-11e8-8851-191a827bed36.PNG)
 
  > Optimizer: Adam.
- 
  > decay: 0.01
- 
  > patience=10. 10번째 기다렸다가 학습 정도의 개선의 여지가 없어서 스탑시킴. 원래 40 epoch돌리고 이 코드에서 16 epoch 더 돌린것.
 
 ![7](https://user-images.githubusercontent.com/42205410/46680008-1a2eda80-cc23-11e8-8367-2ea363d64827.PNG)
@@ -114,7 +113,7 @@ np.random.shuffle()
 
 </br>
 
- # 4. Evaluate The Model
+ ## 4. Evaluate The Model
 
 ![11](https://user-images.githubusercontent.com/42205410/46680047-2c107d80-cc23-11e8-8e32-4ee475b4300f.PNG)
 ![12](https://user-images.githubusercontent.com/42205410/46680068-33d02200-cc23-11e8-9f65-ac3326572cf1.PNG)
