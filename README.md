@@ -1,4 +1,4 @@
-# music-genre-classification
+# Music-genre-classification
 
 </br>
 
@@ -17,8 +17,55 @@
  * DenseNet_next : DenseNet에서 40 epoch돌리고 16 epoch 더 돌렸음 즉 약 56 epoch 정도 돌림
  
 </br>
+## 1. Preprocessing 
 
-## Modeling
+### 1) .mp3 -> .wav
+
+##### pydub - AudioSegment 
+
+> immutable (숫자형, 문자형 , 튜플) 한 형태로 만들어 python으로  조작 가능한 형태로 변환
+>
+> mutable(딕셔너리,리스트)
+
+![1](https://user-images.githubusercontent.com/42205410/46684392-a2b27880-cc2d-11e8-8f7e-5309d7f26bf0.png)
+
+
+### 2) 파일 이름 통일 & 폴더 지정 해주는 과정
+
+파일 이름의 자리수 통일 
+
+```
+ .zfill(3) 
+    문자열 앞에 0을 3개를 채워준다 
+```
+
+![2](https://user-images.githubusercontent.com/42205410/46684397-a514d280-cc2d-11e8-93ad-dcab2cdd4e43.png)
+
+- 오류 파일 3개는 예외 처리 함 
+
+### 3) .wav -> .jpg
+
+##### librosa 이용 하여 포맷 변경 
+
+![3](https://user-images.githubusercontent.com/42205410/46684399-a645ff80-cc2d-11e8-99e8-5d4232914c68.png)
+
+### 2. Data Split
+
+#### 1)장르 별, split data 폴더 생생 
+
+![4](https://user-images.githubusercontent.com/42205410/46684404-a80fc300-cc2d-11e8-9255-961a077bc4ff.png)
+
+#### 2) train : val : test = 80 :10 :10 
+
+```
+np.random.shuffle()
+   파일들을 shuffling 한후 순서대로 val, test, train으로 나누어 준다 
+```
+
+![5](https://user-images.githubusercontent.com/42205410/46684405-a9d98680-cc2d-11e8-9fc5-28ed66d161cf.png)
+
+
+## 3. Modeling
 
  
 ![1](https://user-images.githubusercontent.com/42205410/46679966-ff5c6600-cc22-11e8-8641-220be7b678b4.PNG)
@@ -63,7 +110,7 @@
 
 </br>
 
- # Evaluate The Model
+ # 4. Evaluate The Model
 
 ![11](https://user-images.githubusercontent.com/42205410/46680047-2c107d80-cc23-11e8-8e32-4ee475b4300f.PNG)
 ![12](https://user-images.githubusercontent.com/42205410/46680068-33d02200-cc23-11e8-9f65-ac3326572cf1.PNG)
