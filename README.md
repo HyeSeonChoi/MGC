@@ -4,17 +4,17 @@
 
 ## 시행착오
 
- * model(18_08_28): 데이터에 흰색 공백(테두리)이 있음.
+ * model(18_08_28): 데이터에 흰색 공백(테두리) 있음.
  
- * model(18_08_29): 데이터의 흰색 공백(테두리)를 없앰.
+ * model(18_08_29): 데이터의 흰색 공백(테두리) 없앰.
  
- * model(18_08_30): dropout을 뺌.
+ * model(18_08_30): dropout 뺌.
  
- * model_inceptionResNetV2 : 파라미터 5400만.파라미터가 많아도 효과를 비슷한 수준의 결과를 내서 더 빠른 모델로 선택함.
+ * model_inceptionResNetV2 : 파라미터 5400만.파라미터가 많아도 효과를 비슷한 수준의 결과를 내서 더 빠른 모델로 선택.
  
- * DenseNet : 파라미터 700만 
+ * DenseNet : 파라미터 700만 설정.
  
- * DenseNet_next : DenseNet에서 40 epoch돌리고 16 epoch 더 돌렸음 즉 약 56 epoch 정도 돌림
+ * DenseNet_next : DenseNet에서 40 epoch돌리고 16 epoch 더 돌림. 즉 약 56 epoch 정도 돌림.
  
 </br>
 
