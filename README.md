@@ -52,7 +52,7 @@
 
 ## 2. Data Split
 
-### 1)장르 별, split data 폴더 생생 
+### 1)장르 별, split data 폴더 생성
 
 ![4](https://user-images.githubusercontent.com/42205410/46684404-a80fc300-cc2d-11e8-9255-961a077bc4ff.png)
 
