@@ -1,4 +1,4 @@
-# MGC
+# Music Genre Classification
 
 </br>
 
